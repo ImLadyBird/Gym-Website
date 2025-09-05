@@ -1,4 +1,5 @@
 import Header from "./Components/Header"
+import Main from "./Components/Main"
 import NavBar from "./Components/NavBar"
 
 
@@ -9,6 +10,7 @@ function App() {
     <>
      <NavBar/>
      <Header/>
+     <Main/>
     </>
   )
 }
