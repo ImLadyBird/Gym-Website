@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.RegisterContainer {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.RegisterContainerleft > h1 {
+  font-size: clamp(1.5rem, 2vw, 1.7rem);
+  font-weight: 700;
+}
+.RegisterContainerleft > p {
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+}
+.RegisterCards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.RegisterCards > div {
+  background-color: #1d1d1d;
+  border-radius: 8px;
+  box-shadow: 0px 8px 12px 0px #d90a141f;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.RegisterCards > div > h3 {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  font-weight: 500;
+}
+.RegisterCards > div > p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-align: justify;
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: #5b0408;
+  padding: 12px 16px;
+  border-radius: 12px;
+  align-items: center;
+  gap: 20px;
+}
+.LoginButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.LoginButtons > h5 {
+  color: #ee8e93;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  cursor: pointer;
+}
+.LoginButtons > h5:hover {
+  color: red;
+  text-decoration: underline;
+  font-size: larger;
+}
+.Form > label {
+  align-self: flex-start;
+  font-size: 1rem;
+}
+.Form > input {
+  border: 2px solid #d9d9d9;
+  background-color: transparent;
+  border-radius: 2px;
+  align-self: flex-start;
+  padding: 8px 4px;
+  width: 100%;
+}
+.SignUpBtn {
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px 24px;
+  background-color: #d90a14;
+  border: none;
+}
+.googleBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d9d9d9;
+  background-color: transparent;
+  border-radius: 2px;
+  padding: 5px 4px;
+  gap: 5px;
+}
+.RegisterContainerleft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.RegisterCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 900px) {
+  .RegisterContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .RegisterCardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Form{
+    width: 50%;
+  }
+  .RegisterContainerleft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
