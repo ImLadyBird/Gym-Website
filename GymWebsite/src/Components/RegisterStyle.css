@@ -68,7 +68,7 @@
 .LoginButtons > h5:hover {
   color: red;
   text-decoration: underline;
-  font-size: larger;
+  font-size: clamp(1.3rem, 3vw,1.7rem);
 }
 .Form > label {
   align-self: flex-start;

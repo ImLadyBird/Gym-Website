@@ -20,8 +20,8 @@ export default function NavBar(){
         <li><a href="#">About Us</a></li>
        </ul>
        <div className="Login">
-        <li><button className="login">Login</button></li>
-        <li><button className="signup">Sign Up</button></li>
+        <button className="login">Login</button>
+        <button className="signup">Sign Up</button>
        </div>
      </div>  
   </div>

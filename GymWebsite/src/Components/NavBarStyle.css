@@ -74,6 +74,9 @@
   }
   .Login {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
   }
   .MainMenu > ul > li > a {
     text-decoration: none;
