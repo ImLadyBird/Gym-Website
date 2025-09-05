@@ -1,101 +1,101 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto , sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
-.NavCoontainer{
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    align-content: center;
+.NavCoontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  align-content: center;
 }
-.NavBar{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+.NavBar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
-.hamburger{
-    background-color: transparent;
-    border: none;
-    transition: right 0.3s ease;
+.hamburger {
+  background-color: transparent;
+  border: none;
+  transition: right 0.3s ease;
 }
-.HamList{
-    padding: 1rem;
-    background-color: red;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition:
-    opacity 0.3s ease,
-    max-height 0.3s ease;
-    background: #222;
+.HamList {
+  padding: 1rem;
+  background-color: red;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  background: #222;
 }
 .HamList.open {
-    opacity: 1;
-    max-height: 500px;
+  opacity: 1;
+  max-height: 500px;
 }
-.HamList>li{
-    text-align: right;
-    padding: 10px 0;
+.HamList > li {
+  text-align: right;
+  padding: 10px 0;
 }
-.HamList > li > a{
-    text-align: right;
-    color: white;
-    text-decoration: none;
+.HamList > li > a {
+  text-align: right;
+  color: white;
+  text-decoration: none;
 }
 .MainMenu {
-    display: none;
+  display: none;
 }
 
-@media screen and (min-width : 900px){
-    .hamburger{
-        display: none;
-    }
-    .MainMenu {
-        display: block;
-        display: flex;
-        gap:clamp(2rem,5vw,8rem);
-    }
-    .MainMenu > ul{
-        display: flex;        
-        gap: clamp(2rem,5vw,8rem);  
-        align-items: center;       
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-    .Login{
-        display: flex;
-    }
-    .MainMenu > ul >li >a{
-        text-decoration: none;
-        color: white;
-        white-space: nowrap;
-    }
-    .MainMenu > ul >li >a:hover {
-        text-decoration: underline;  
-        color: red;
-    }
-    .MainMenu .login,.MainMenu .signup {
-        color: red;
-        background-color: transparent;
-        border: 1px solid #CD4E17;
-        border-radius: 12px;
-        padding: 6px 16px;
-        white-space: nowrap;
-    }
-    .MainMenu .login:hover,.MainMenu .signup:hover {
-        background-color: red;
-        color: white;
-    }
+@media screen and (min-width: 900px) {
+  .hamburger {
+    display: none;
+  }
+  .MainMenu {
+    display: block;
+    display: flex;
+    gap: clamp(2rem, 5vw, 8rem);
+  }
+  .MainMenu > ul {
+    display: flex;
+    gap: clamp(2rem, 5vw, 8rem);
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .Login {
+    display: flex;
+  }
+  .MainMenu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+  }
+  .MainMenu > ul > li > a:hover {
+    text-decoration: underline;
+    color: red;
+  }
+  .MainMenu .login,
+  .MainMenu .signup {
+    color: red;
+    background-color: transparent;
+    border: 1px solid #cd4e17;
+    border-radius: 12px;
+    padding: 6px 16px;
+    white-space: nowrap;
+  }
+  .MainMenu .login:hover,
+  .MainMenu .signup:hover {
+    background-color: red;
+    color: white;
+  }
 }

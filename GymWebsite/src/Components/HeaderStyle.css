@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.HeadeerMobileContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.HeaderImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.HeaderText {
+  font-size: clamp(0.8rem, 3vw, 2rem);
+  line-height: 130%;
+  font-weight: 400;
+  text-align: left;
+  padding: 20px 10px;
+}
+.HeaderButton {
+  color: red;
+  background-color: transparent;
+  border: 1px solid #cd4e17;
+  border-radius: 12px;
+  padding: 6px 16px;
+  white-space: nowrap;
+}
+.HeaderButton:hover {
+  background-color: #d90a14;
+  color: white;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+.HeaderInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 30px auto;
+}
+.HeaderInfo > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.red {
+  color: red;
+  font-weight: 900;
+}
+.HeaderInfo > div > h2 {
+  font-size: clamp(1rem, 3vw, 2rem);
+}
+.HeaderInfo > div > p {
+  color: #888888;
+  font-size: clamp(0.8rem, 3vw, 2rem);
+  font-weight: 400;
+  text-align: justify;
+}
+.HeadeerDesktopContainer {
+  display: none;
+}
+.HeaderInfoDesktop{
+    display: none;
+}
+@media screen and (min-width: 900px) {
+  .HeadeerMobileContainer {
+    display: none;
+  }
+  .HeadeerDesktopContainer {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 30px;
+  }
+  .HeaderDesktopTxt {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .HeaderDesktopTxt > p {
+    max-width: 550px;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-weight: 400;
+    color: #ffffff88;
+    text-align: justify;
+  }
+  .HeadeerDesktopContainer > img {
+    max-width: 600px;
+    width: 50%;
+  }
+  .HeaderDesktopButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 10px;
+  }
+  .HeaderButton {
+    color: red;
+    background-color: transparent;
+    border: 1px solid #cd4e17;
+    border-radius: 20px;
+    padding: 6px 60px;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 200;
+    box-shadow: 0px 2px 4px 0px #00000033;
+  }
+  .HeaderInfoDesktop {
+    color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  .HeaderInfoDesktop > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .HeaderInfoDesktop > div > h2 {
+    font-size: clamp(1rem, 1.5vw, 1.7rem);
+    font-weight: 700;
+  }
+  .HeaderInfoDesktop > div > p {
+    max-width: 300px;
+    font-size: clamp(0.5rem, 2vw, 0.8rem);
+    font-weight: 400;
+    color: #ffffff88;
+    letter-spacing: 0;
+    
+  }
+}
